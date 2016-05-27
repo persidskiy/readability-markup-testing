@@ -1,0 +1,400 @@
+<html>
+  <head>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=no">
+    <style>
+      /*
+      NOTE: Almost all sizes in this file is represented in `rem`s. It means
+      that the size is relative to font size of the body. It enables us to
+      change all other sizes (margins, paddings, etc) proportionally only by
+      changing the font-size of the body.
+      */
+
+      html {
+        font-size: 16px;
+
+        /* Fixes unwanted font-size enlarging in landscape mode */
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* Page */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .yb-readability-page
+      {
+        max-width: 40rem;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+      }
+
+      /* Main typography */
+
+      html {
+        line-height: 1.5;
+        font-family: -apple-system, sans-serif;
+        color: #000;
+        word-wrap: break-word;
+      }
+
+      a {
+        color: #2e8ae6;
+        text-decoration: none;
+        word-break: break-all;
+      }
+
+      p, blockquote, img, ol, ul, iframe, .yb-readability-title, h1, h2, h3, h4, h5, h6 {
+        display: block;
+        margin: 1em 0;
+      }
+
+      ol ul, ul ol, ul ul, ol ol {
+        margin-top: 0;
+      }
+
+      .yb-readability-title, h1, h2, h3, h4, h5, h6
+      {
+        font-weight: bold;
+      }
+
+      .yb-readability-title, h1 {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      h4, h5, h6 {
+        font-size: .9rem;
+      }
+
+      h6 {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+      }
+
+      h5, h6 {
+        color: #888;
+      }
+
+      .yb-readability-title, h1, h2, h3 {
+        font-family: -apple-system-headline, sans-serif;
+      }
+
+      h4, h5, h6 {
+        font-family: -apple-system-subheadline, sans-serif;
+      }
+
+      /* Images & Videos */
+
+      img, iframe {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Code */
+
+      code {
+        font-size: 0.9rem;
+        background-color: #eee;
+        border-radius: 3px;
+        padding: 2px 5px;
+        word-break: break-all;
+        word-wrap: normal;
+      }
+
+      pre code {
+        background-color: transparent;
+        border-radius: 3px;
+        padding: 0;
+        word-break: normal;
+      }
+
+      pre {
+        font-size: 0.9rem;
+      }
+
+      /* Separators */
+
+      hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+      }
+
+      /* Quotes */
+
+      blockquote {
+        border-left: 2px solid #eaeaea;
+        color: #888;
+        padding-left: 0.9rem;
+      }
+
+      /* Lists */
+
+      ol, ul {
+        padding-left: 1.1rem;
+      }
+
+      /* Tables */
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td, th {
+        border: 1px solid #eaeaea;
+        padding: 2px 6px;
+      }
+
+      th {
+        background-color: #f7f7f7;
+      }
+
+      /* Overlapping elements */
+
+      .yb-readability-overlap {
+        display: block;
+        width: calc(100% + 2.5rem);
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+      }
+
+      /* Responsive scrollable elements */
+
+      .yb-readability-scroll {
+        display: block;
+        width: calc(100% + 2.5rem);
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+        overflow-x: auto;
+        box-sizing: border-box;
+
+        /* Enables smooth scrolling (bounce) in web scroll */
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .yb-readability-scroll-insets
+      {
+        display: inline-block;
+        border-left: 1.25rem solid transparent;
+        border-right: 1.25rem solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="yb-readability-page">
+      <h1 class="yb-readability-title">Consectetur adipiscing elit duis</h1>
+      <div class="yb-readability-content">
+		<p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <h2>Heading 2</h2>
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <h3>Heading 3</h3>
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <h4>Heading 4</h4>
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <h5>Heading 5</h5>
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <h6>Heading 6</h6>
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <img src="images/1.jpg">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum dapibus lorem, ut eleifend lorem mollis in. Pellentesque ut dignissim augue. <b>bold</b>, <strong>strong</strong>, <i>italics</i>, <em>emphasis</em>, <s>strike</s>, <u>underline</u>, <ins>inserted</ins>, <code>Code</code>.  Nullam sit amet nunc turpis. Aliquam volutpat nisi tortor, sit amet pharetra nunc laoreet tempus. Curabitur eget euismod augue</p>
+
+    <p>Block quote:</p>
+
+    <blockquote>
+        Pellentesque id turpis mattis, semper magna nec, mollis orci.
+    </blockquote>
+
+    <p><img src="images/2.jpg"></p>
+
+    <p>Murder weapons:</p>
+    <ul>
+        <li>Axe</li>
+        <li>Knife</li>
+        <li>Scissors</li>
+        <li>Guns:
+            <ul>
+                <li>Pistol</li>
+                <li>Machinegun</li>
+                <li>Sniper rifle</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Murder methods:</p>
+    <ol>
+        <li>Hanging</li>
+        <li>Decapitating</li>
+        <li>Shooting
+            <ol>
+                <li>In head</li>
+                <li>In heart</li>
+            </ol>
+        </li>
+    </ol>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th> 
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Orci luctus et ultrices posuere cubilia Curae; Cras vel porta ipsum, eget cursus tellus. Quisque non felis condimentum enim sodales fermentum.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+                <th>Info</th>
+                <th>Age</th>
+                <th>Sex</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th> 
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Proin accumsan aliquet est, sed mollis nisl gravida ullamcorper.</td>
+                <td>39</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Phasellus vulputate nulla vel urna egestas sagittis.</td>
+                <td>31</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+                <td>Proin consectetur tortor quam, sit amet convallis nulla commodo nec.</td>
+                <td>25</td>
+                <td>Unknown</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Separating line:</p>
+
+    <hr />
+
+    <p>Proin accumsan aliquet est, sed mollis nisl gravida ullamcorper. Phasellus vulputate nulla vel urna egestas sagittis. Proin consectetur tortor quam, sit amet convallis nulla commodo nec.</p>
+
+    <img src="images/3.jpg">
+
+    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+
+    <pre><code class="cpp hljs">var holdrand  = <span class="hljs-number">0</span>
+    
+<span class="hljs-function">func <span class="hljs-title">microsoft_rnd</span><span class="hljs-params">()</span>-&gt;Int </span>{
+    var k = Int.multiplyWithOverflow(holdrand, <span class="hljs-number">253101125310112531011253101125310112531011</span>)
+    k = Int.addWithOverflow(k<span class="hljs-number">.0</span>, <span class="hljs-number">253101125310112531011</span>)
+    holdrand =  k<span class="hljs-number">.0</span>
+    <span class="hljs-keyword">return</span> Int((holdrand &gt;&gt; <span class="hljs-number">16</span>)  &amp; <span class="hljs-number">0x7FFF</span>)
+}
+
+<span class="hljs-function">func <span class="hljs-title">microsoft_rand</span><span class="hljs-params">(number:Int)</span>-&gt;Int </span>{
+    <span class="hljs-keyword">return</span> microsoft_rnd() % number
+}
+</code></pre>
+
+    <h2>Videos</h2>
+
+    <p> Pellentesque id turpis mattis, semper magna nec, mollis orci. Vivamus facilisis rutrum condimentum. Vestibulum ante ipsum primis in faucibus </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XaqR3G_NVoo" frameborder="0" allowfullscreen></iframe>
+
+    <p>Orci luctus et ultrices posuere cubilia Curae; Cras vel porta ipsum, eget cursus tellus. Quisque non felis condimentum enim sodales fermentum.</p>
+
+    <iframe src="https://player.vimeo.com/video/159240611?color=f7e302&portrait=0&badge=0" width="500" height="213" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+    <p> Pellentesque id turpis mattis, semper magna nec, mollis orci. Vivamus facilisis rutrum condimentum. Vestibulum ante ipsum primis in faucibus </p>
+
+    <p>Orci luctus et ultrices posuere cubilia Curae; Cras vel porta ipsum, eget cursus tellus. Quisque non felis condimentum enim sodales fermentum.</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    (function() {
+      /**
+       * Wraps an element using spans with classes.
+       *
+       * @param {String} selector
+       * @param {...String} classes
+       */
+      function wrapElements(selector) {
+        var nodes = document.documentElement.querySelectorAll(selector);
+        var classes = [].slice.call(arguments).splice(1);
+
+        [].forEach.call(nodes, function(node) {
+          var currentNode = node.cloneNode(true);
+
+          classes.forEach(function(cls) {
+            var wrapper = document.createElement('span');
+            wrapper.className = cls;
+            wrapper.appendChild(currentNode);
+            currentNode = wrapper;
+          });
+
+          node.parentNode.replaceChild(currentNode, node);
+        });
+      }
+
+      ['table', 'pre'].forEach(function(tag) {
+        wrapElements(tag, 'yb-readability-scroll-insets',
+            'yb-readability-scroll');
+      });
+
+      ['img', 'iframe'].forEach(function(tag) {
+        wrapElements(tag, 'yb-readability-overlap');
+      });
+    })();
+  </script>
+</html>
