@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta charset="UTF-8">
     <meta name="viewport"
       content="width=device-width, initial-scale=1.0,
         maximum-scale=1.0, user-scalable=no">
@@ -25,6 +26,12 @@
           }
       }
 
+      @media screen and (min-width: 768px) {
+        html {
+          font-size: 17px;
+        }
+      }
+
       /* Page */
 
       * {
@@ -34,9 +41,9 @@
 
       .yb-readability-page
       {
-        max-width: 40rem;
+        max-width: 35rem;
         margin: 0 auto;
-        padding: 0 1.25rem;
+        padding: 0 1.1rem;
       }
 
       /* Main typography */
@@ -44,19 +51,19 @@
       html {
         line-height: 1.5;
         font-family: -apple-system, sans-serif;
-        color: #000;
+        color: #222;
         word-wrap: break-word;
       }
 
       a {
-        color: #2e8ae6;
+        color: #0077CC;
         text-decoration: none;
         word-break: break-all;
       }
 
       p, blockquote, img, ol, ul, iframe, .yb-readability-title, h1, h2, h3, h4, h5, h6 {
         display: block;
-        margin: 1em 0;
+        margin: 0.5em 0;
       }
 
       ol ul, ul ol, ul ul, ol ol {
@@ -66,31 +73,39 @@
       .yb-readability-title, h1, h2, h3, h4, h5, h6
       {
         font-weight: bold;
+        color: #222;
+        margin-top: 1.5em;
       }
 
-      .yb-readability-title, h1 {
-        font-size: 1.3rem;
+      .yb-readability-title, 
+      h1 {
+        font-size: 2.0rem;
+        line-height: 1.2;
+        margin-top: 1.5rem;
       }
 
       h2 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
       }
 
       h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
       }
 
-      h4, h5, h6 {
-        font-size: .9rem;
+      h4 {
+        font-size: 1.2rem;
+      }
+      h5 {
+        font-size: 1.0rem;
       }
 
       h6 {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         text-transform: uppercase;
-      }
-
-      h5, h6 {
-        color: #888;
+        letter-spacing: 0.05rem;
+        margin-top: 2em;
       }
 
       .yb-readability-title, h1, h2, h3 {
@@ -108,6 +123,15 @@
         height: auto;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
+      figcaption { 
+        color: #777;
+        margin-top: -0.5em;
+        font-size: 1.0em;
+        font-style: italic;
       }
 
       /* Code */
@@ -132,6 +156,11 @@
         font-size: 0.9rem;
       }
 
+      .yb-readability-codeblock .yb-readability-scroll {
+        padding: 1rem 0;
+        background-color: #f6f5f3;
+      }
+
       /* Separators */
 
       hr {
@@ -143,9 +172,9 @@
       /* Quotes */
 
       blockquote {
-        border-left: 2px solid #eaeaea;
-        color: #888;
-        padding-left: 0.9rem;
+        border-left: 2px solid #fc0;
+        color: #222;
+        padding-left: 1.0rem;
       }
 
       /* Lists */
@@ -161,30 +190,30 @@
       }
 
       td, th {
-        border: 1px solid #eaeaea;
-        padding: 2px 6px;
+        border: 1px solid #e5e5e5;
+        padding: 4px 10px;
       }
 
       th {
-        background-color: #f7f7f7;
+        background-color: #f6f5f3;
       }
 
       /* Overlapping elements */
 
       .yb-readability-overlap {
         display: block;
-        width: calc(100% + 2.5rem);
-        margin-left: -1.25rem;
-        margin-right: -1.25rem;
+        width: calc(100% + 2.2rem);
+        margin-left: -1.1rem;
+        margin-right: -1.1rem;
       }
 
       /* Responsive scrollable elements */
 
       .yb-readability-scroll {
         display: block;
-        width: calc(100% + 2.5rem);
-        margin-left: -1.25rem;
-        margin-right: -1.25rem;
+        width: calc(100% + 2.2rem);
+        margin-left: -1.1rem;
+        margin-right: -1.1rem;
         overflow-x: auto;
         box-sizing: border-box;
 
@@ -195,38 +224,38 @@
       .yb-readability-scroll-insets
       {
         display: inline-block;
-        border-left: 1.25rem solid transparent;
-        border-right: 1.25rem solid transparent;
+        border-left: 1.1rem solid transparent;
+        border-right: 1.1rem solid transparent;
       }
     </style>
   </head>
   <body>
     <div class="yb-readability-page">
-      <h1 class="yb-readability-title">Consectetur adipiscing elit duis</h1>
+      <h1 class="yb-readability-title">Изучение цветов, типографики и принципов дизайна под Apple устройства</h1>
       <div class="yb-readability-content">
-		<p>Integer tincidunt justo justo, et <a href="#">vestibulum velit</a> semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
-    <h2>Heading 2</h2>
-    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
-    <h3>Heading 3</h3>
-    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
-    <h4>Heading 4</h4>
-    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
-    <h5>Heading 5</h5>
-    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
-    <h6>Heading 6</h6>
-    <p>Integer tincidunt justo justo, et vestibulum velit semper ut. Fusce venenatis nisl eget libero facilisis, at tempus ligula blandit. Maecenas ac metus risus.</p>
+    <p>Два года назад, Apple полностью обновил свой язык дизайна для современных пользователей. Теперь он гораздо проще, позволяет дизайнерам сфокусироваться <a href="#">на анимациях</a>  и функционале вместо полировки сложнейшей графики. </p>
+    <h2>Как создавать цвета, типографику и макет для iOS</h2>
+    <p>Меня много раз просили объяснить, как начать создавать интерфейсы, какие есть советы по улучшению своего дизайнерского мастерства. Хотя единого решения всех вопросов не существует, есть некоторые советы и правила по дизайну для iOS, которые кардинально повлияют на ваш рабочий процесс.</p>
+    <h3>Ключевые аспекты философии</h3>
+    <p>Даже если вы создаете дизайн совершенно под другую платформу, принципы остаются, и вы можете применить те же техники, которые изучили для веба или печатного дизайна. iOS — это платформа, в которой дизайн возвращается к своим истокам. Все выглядит как современный журнал с красивой типографикой и простыми макетами. Приемы, которым вы обучитесь, очень помогут вам в создании высококачественного продукт-дизайна.</p>
+    <h4>Пиетет</h4>
+    <p>iOS руководствуется тремя ключевыми философиями: пиетет, ясность и глубина. Я разделил смысл этих трех принципов на практические подпункты, которые куда глубже поясняют суть, чем общая информация в документации.</p>
+    <h5>Упрощайте</h5>
+    <p>Ваш пользовательский интерфейс должен быть урезан до ключевой эстетики. Каждый раз, когда вы добавляете элемент, спрашивайте себя: “А это необходимо?”. Если только ваше приложение не игра или какая-то тема, избегайте использования тяжелых текстур, 3D-эффектов и множества окон. Вместо этого сконцентрируйте дизайн на функциональных цветах, гармоничных градиентах и красивой типографике.</p>
+    <h6>Максимизируйте контент</h6>
+    <p>Контент должен занимать весь экран, давая максимальное пространство для его внутренних элементов. Избегайте множества контейнеров, максимизируйте области прокрутки, что позволит расширить возможности для взаимодействий.</p>
     
     <figure>
       <img src="images/1.jpg">
-      <figcaption>Image with a caption</figcaption>
+      <figcaption>Где-то недалеко от Бали</figcaption>
     </figure>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vestibulum dapibus lorem, ut eleifend lorem mollis in. Pellentesque ut dignissim augue. <b>bold</b>, <strong>strong</strong>, <i>italics</i>, <em>emphasis</em>, <s>strike</s>, <u>underline</u>, <ins>inserted</ins>, <code>Code</code>.  <a href="#">Nullam sit amet nunc turpis</a>. Aliquam volutpat nisi tortor, sit amet pharetra nunc laoreet tempus. Curabitur eget euismod augue</p>
+    <p>Из-за упрощения пользовательского интерфейса и фокуса на контенте ваша типографика будет занимать от 50% до 90% экрана. Следовательно, очень важно подобрать красивый шрифт и настроить жирность, высоту строк, цвет для текстов, чтобы было и приятно глазу, и максимально комфортно для чтения. Подробнее вопрос будет рассмотрен в разделе Типографика. <b>bold</b>, <strong>strong</strong>, <i>italics</i>, <em>emphasis</em>, <s>strike</s>, <u>underline</u>, <ins>inserted</ins>, <code>Code</code>.  <a href="#">Nullam sit amet nunc turpis</a>. Aliquam volutpat nisi tortor, sit amet pharetra nunc laoreet tempus. Curabitur eget euismod augue</p>
 
     <p>Block quote:</p>
 
     <blockquote>
-        Pellentesque id turpis mattis, semper magna nec, mollis orci.
+        Типографика – это контент. А не то, что ты подумал.
     </blockquote>
 
     <p><img src="images/2.jpg"></p>
@@ -399,10 +428,11 @@
         });
       }
 
-      ['table', 'pre'].forEach(function(tag) {
-        wrapElements(tag, 'yb-readability-scroll-insets',
-            'yb-readability-scroll');
-      });
+      wrapElements('table', 'yb-readability-scroll-insets',
+        'yb-readability-scroll');
+
+      wrapElements('pre', 'yb-readability-scroll-insets', 
+        'yb-readability-scroll', 'yb-readability-codeblock');
 
       ['img', 'iframe'].forEach(function(tag) {
         wrapElements(tag, 'yb-readability-overlap');
