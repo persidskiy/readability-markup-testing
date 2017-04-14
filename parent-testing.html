@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parent child testing</title>
+	<meta charset="utf-8">
+	<meta name="referrer" content="always">
+	<meta name="viewport"
+      content="width=device-width, initial-scale=1.0,
+        maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<p>
+	<button id="open-child">Open child</button>
+</p>
+<p>
+	<button id="close-child">Close child</button>
+</p>
+<p>
+	<a href="parent-testing.html" target="_blank">Open in new window</a>
+</p>
+
+<script type="text/javascript">
+	var openButton = document.getElementById('open-child');
+	var closeButton = document.getElementById('close-child');
+	var childWindow;
+
+	openButton.addEventListener('click', function() {
+		childWindow = window.open('parent-closer.html', '', 'scrollbars=1');
+		// childWindow = window.open('', '', 'scrollbars=1');
+		childWindow.document.documentElement.innerHTML = '<!doctype html>\
+<p>Содержание <button onclick="window.close();">Закрыть</button>';
+	}, false);
+	closeButton.addEventListener('click', function() {
+		childWindow.close();
+	});
+
+</script>
+
+</body>
+</html>
